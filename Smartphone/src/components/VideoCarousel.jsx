@@ -18,7 +18,7 @@ const VideoCarousel = () => {
       startPlay: false,
       videoId: 0,
       isLastVideo: false,
-      isPlaying: false
+      isPlaying: false,
     });
 
   const [loadedData, setLoadedData] = useState([]);
@@ -159,6 +159,10 @@ const VideoCarousel = () => {
                             ? handleProcess("video-end", i)
                             : handleProcess("video-last")
                         }
+                        onPlay={() =>
+                          setVideo((pre) => ({ ...pre, isPlaying: true}))
+                        }
+                        onLoadedMetadata={(e) => handleLoadedMetaData(i, e)}
                         >
                             <source src={list.video} type='video/mp4' />
                         </video>
@@ -174,6 +178,36 @@ const VideoCarousel = () => {
                 </div>
             </div>
         ))}
+      </div>
+
+      <div className='relative flex-center mt-10'>
+        <div className='flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full'>
+          {videoRef.current.map((_, i) => (
+            <span 
+            key={i}
+            className='mx-2 w-3 h-3 bg-gray-200 rounded-full relative cursor-pointer'
+            ref={(el) => (videoDivRef.current[i] = el)}
+            >
+                <span
+                  className='absolute h-full w-full rounded-full'
+                  ref={(el) => (videoSpanRef.current[i] = el)}
+                />
+            </span>
+          ))}
+        </div>
+
+        <button>
+          <img src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
+          alt={isLastVideo ? "replay" : !isPlaying ? "play" : "pause"}
+          onClick={
+            isLastVideo
+              ? () => handleProcess("video-reset")
+              : !isPlaying
+              ? () => handleProcess("play")
+              : () => handleProcess("pause")
+          }
+          />
+        </button>
       </div>
     </>
   )
