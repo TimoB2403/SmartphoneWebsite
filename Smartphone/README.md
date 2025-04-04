@@ -1,12 +1,61 @@
-# React + Vite
+# 🌟 Smartphone Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[english]
 
-Currently, two official plugins are available:
+## This is my smartphone project, built in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The portfolio was created in April 2025. I plan to continuously expand this project as my web development skills grow. Primarily, this portfolio serves to give you an initial overview of me.
 
-## Expanding the ESLint configuration
+### 🛠 Technologies used:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React-Router-Dom
+- framer-motion
+- Emailjs
+- useContext
+- useState, useRef
+- Tailwind CSS
+
+### 🚀 Features:
+
+- Responsive web design
+- interactive 3D models
+- Website available in German and English
+
+### ⚡ Challenges Faced
+
+- New Technologies:
+
+### 📬 Contact:
+
+- Email: 
+- GitHub: TimoB2403
+
+---
+
+[deutsch]
+
+# 🌟 Portfolio Timo Baumeister
+
+## Das ist mein Portfolio, gebaut in React.
+
+Das Portfolio wurde im März 2025 erstellt. Ich habe vor, dieses Projekt mit wachsenden Fähigkeiten in der Webprogrammierung laufend zu erweitern. In erster Linie dient das Portfolio dazu, Ihnen einen ersten Überblick über mich zu geben.
+
+### 🛠 Genutzte Techniken:
+
+- React-Router-Dom
+- framer-motion
+- Emailjs
+- useContext
+- useState, useRef
+- Tailwind CSS
+
+### 🚀 Features:
+
+- Responsives Webdesign
+- Interaktive 3D Modelle
+- Webseite auf Deutsch und Englisch verfügbar
+
+### 📬 Kontakt:
+
+- Email:
+- GitHub: TimoB2403
